@@ -5,4 +5,4 @@
 azure-functions
 pandas==2.2.2
 requests==2.32.3
-
+azure-storage-blob==12.23.0

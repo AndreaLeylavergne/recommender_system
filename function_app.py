@@ -6,7 +6,7 @@ from azure.storage.blob import BlobServiceClient
 import requests
 
 # Charger les recommandations depuis le fichier CSV
-RECOMMENDATIONS_DF = pd.read_csv("https://functiondef2.blob.core.windows.net/stockblobrecommender/user_recommendations_last.csv?sv=2022-11-02&ss=b&srt=co&se=2024-09-21T09%3A51%3A26Z&sp=rwl&sig=HsaeDs7oLsVBt80DUNodtdcgOZ9U%2BVhgYrRUBdlBmL8%3D")
+RECOMMENDATIONS_DF = pd.read_csv("https://functiondef2.blob.core.windows.net/stockblobrecommender/user_recommendations_last.csv?sp=racw&st=2024-09-18T14:04:04Z&se=2027-09-11T22:04:04Z&sv=2022-11-02&sr=b&sig=KrwYchaiGKoBO02dbDqArhJMBjq3gRiJVtSMNL4%2ByvA%3D")
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
